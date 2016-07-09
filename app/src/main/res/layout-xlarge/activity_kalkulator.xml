@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="outsideInset"
+    >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nama anda"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/idednama"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/idedtinggibadan"
+        android:textAlignment="center"
+        android:hint="tinggi badan"
+        android:layout_below="@+id/idednama" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="berat badan "
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/idedberatbadan"
+        android:layout_below="@+id/idedtinggibadan"
+        android:layout_alignParentStart="true" />
+
+
+
+    <RadioButton
+        android:text="RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idedberatbadan"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="132dp"
+        android:id="@+id/radioButton" />
+
+    <RadioButton
+        android:text="RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioButton"
+        android:layout_toEndOf="@+id/radioButton"
+        android:layout_marginStart="41dp"
+        android:id="@+id/radioButton2" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:id="@+id/spinner2" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/radioButton"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
