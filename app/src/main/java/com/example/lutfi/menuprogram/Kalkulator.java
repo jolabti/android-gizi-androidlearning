@@ -27,6 +27,7 @@ public class Kalkulator extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_kalkulator);
       final String am;
+
       edNama=(EditText)findViewById(R.id.idednama);
       edTinggiBadan=(EditText)findViewById(R.id.idedtinggibadan);
       edBeratBadan=(EditText)findViewById(R.id.idedberatbadan);
@@ -36,21 +37,25 @@ public class Kalkulator extends Activity {
       tvCetak=(TextView)findViewById(R.id.tvhasil);
 
       //a=Integer.parseInt(edTinggiBadan.getText().toString());
+//
 
-      aString=edTinggiBadan.getText().toString();
-      bString=edTinggiBadan.getText().toString();
-
-       a= Integer.parseInt(aString);
-        b= Integer.parseInt(bString);
-
-      hasil = a + b;
+    //  hasil = Integer.parseInt(edTinggiBadan.getText().toString()) + Integer.parseInt(edBeratBadan.getText().toString());
 
 
       clickthis.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
 
-              tvCetak.setText(edNama.getText().toString()  + String.valueOf(hasil));
+              aString=edTinggiBadan.getText().toString();
+              bString=edBeratBadan.getText().toString();
+
+               a= Integer.parseInt(aString);
+               b= Integer.parseInt(bString);
+
+              hasil = a + b;
+
+
+              tvCetak.setText(" "+hasil);
 
           }
       });
